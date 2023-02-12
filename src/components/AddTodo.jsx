@@ -14,12 +14,13 @@ const AddTodo = (props) => {
         props.item(item) 
     }
     return(
-        <form method='post' onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
         <input type="text"
         name='item'
         value={item}
         onChange ={handleChange}
-        placeholder='Enter Todo' 
+        placeholder='Enter Todo'
+        autoComplete = 'off'
         />
         <button type='submit'>Add</button>
         </form>
